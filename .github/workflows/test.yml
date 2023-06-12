@@ -1,0 +1,26 @@
+# Can give any name to the workflow
+name: lib.py CI
+on:
+  push:
+    branches:
+      - main
+
+  # Optional
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    # Test will be run in a fresh instance of ubuntu
+    runs-on: ubuntu-latest
+
+    # Actual steps to run
+    # CI will pass only if all steps are successful
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Install Python libraries
+      run: pip install -r requirements.txt
+    - name: Run tests
+      run: pytest
