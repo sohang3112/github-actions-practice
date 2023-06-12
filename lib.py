@@ -1,2 +1,2 @@
 def plus(x, y):
-    return x + y + 1
+    return x + y 
