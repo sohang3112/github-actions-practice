@@ -8,5 +8,8 @@ Practising Github CI/CD Actions
 - Created *lib.py* (module which will be tested).
 - **Unit Testing**: Unit Testing means a list of tests (as Python code only!). Whenever any change is made, we can test using `pytest` command. Tests are in *test_lib.py*. Libraries used for testing are `pytest` and `hypothesis`.
 - Added required libraries to *requirements.txt*.
+- Created Github Action workflow YAML in *.github/workflows/test.yml*
 
+## Resources Used
+- [Github Actions Guide](https://github.com/readme/guides/sothebys-github-actions)
 
